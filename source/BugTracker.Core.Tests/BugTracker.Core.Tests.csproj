@@ -30,6 +30,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="nunit.framework, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PeanutButter.RandomGenerators">
+      <HintPath>..\..\..\LendingLibrary\source\LendingLibrary.DB.Tests\bin\Debug\PeanutButter.RandomGenerators.dll</HintPath>
+    </Reference>
+    <Reference Include="PeanutButter.TestUtils.Generic">
+      <HintPath>..\..\..\LendingLibrary\source\LendingLibrary.DB.Tests\bin\Debug\PeanutButter.TestUtils.Generic.dll</HintPath>
+    </Reference>
+    <Reference Include="PeanutButter.Utils">
+      <HintPath>..\..\..\LendingLibrary\source\LendingLibrary.DB.Tests\bin\Debug\PeanutButter.Utils.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -40,7 +53,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Domains\TestBaseEntity.cs" />
+    <Compile Include="Domains\TestComment.cs" />
+    <Compile Include="Domains\TestCompany.cs" />
+    <Compile Include="Domains\TestIssue.cs" />
+    <Compile Include="Domains\TestProject.cs" />
+    <Compile Include="Domains\TestUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BugTracker.Core\BugTracker.Core.csproj">
+      <Project>{f13f9755-f0f9-45f1-bf4b-c8d59ed0b0ba}</Project>
+      <Name>BugTracker.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
