@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using BugTracker.Core.Domains;
 
-namespace BugTracker.Core.Domains
+namespace BugTracker.Web.Models
 {
-    public class User : BaseEntity
+    public class UserViewModel : BaseViewModel
     {
         public Guid UserId { get; set; }
         public string FirstName { get; set; }

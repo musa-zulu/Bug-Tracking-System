@@ -51,6 +51,7 @@
     <Compile Include="Domains\Project.cs" />
     <Compile Include="Domains\Status.cs" />
     <Compile Include="Domains\User.cs" />
+    <Compile Include="Domains\UserType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
