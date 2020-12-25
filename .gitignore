@@ -2,3 +2,8 @@
 server/source/.vs/BugTracker/config/applicationhost.config
 
 server/source/.vs/BugTracker/v16/TestStore/0/
+copy/*
+
+server/source/.vs/BugTracker/DesignTimeBuild/.dtbcache.v2
+
+server/source/BugTracker.Persistence/ApplicationDbContext.dgml
